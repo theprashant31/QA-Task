@@ -47,8 +47,8 @@ npx playwright test tests --headed --retries=1 --reporter=html
 
 ```bash
 Eg: 
-npx playwright test tests/ui/login.spec.js
-npx playwright test tests/api/warehouse/get/all_bin.spec.js
+npx playwright test tests/ui/login.spec.js --headed --retries=1
+npx playwright test tests/api/warehouse/get/all_bin.spec.js --headed --retries=1
 ```
 
 ### Running tests in headed (UI) mode:
@@ -83,16 +83,8 @@ npx playwright test --project=chromium
 |--------------------------------|-----------------------------------------|
 | `npx playwright test --ui`     | Opens Playwright's built-in Test Explorer |
 | `npx playwright show-report`   | Shows the HTML report after test execution |
-
 ---
-
-## 📚 Useful Links
-
-- [Playwright Official Documentation](https://playwright.dev/)
-- [Node.js Download](https://nodejs.org/)
-
 ---
-
 # Quick Summary (Steps)
 ```bash
 git clone https://github.com/theprashant31/QA-Task.git
@@ -101,6 +93,3 @@ npm install
 npx playwright install   # if browsers aren't installed automatically
 npx playwright test
 ```
-
----
-
